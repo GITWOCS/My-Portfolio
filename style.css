@@ -1,0 +1,367 @@
+:root{
+    --color1: #d89584;
+    --color2: #f4f4f4;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    line-height: 1.5;
+    font-family: arial;
+}
+iframe{
+    width: 100%;
+    border: none;
+    height: 350px;
+}
+div.cover{
+    background: url(cover_overlay.png) no-repeat center/100% 100%,url(cover.jpg) no-repeat center / cover;
+    height: 360px;
+    position: relative;
+}
+img.cover-profile{
+    height: 100px;
+   position: relative;
+   left: 50%;
+   margin-left: -50px;
+   margin-top: 50px;
+}
+img.cover-profile1{
+   /* height: 100px;9*/
+    width: 100%;
+   position: relative;
+
+   margin-top: 33px;
+
+}
+h1{
+    color: white;
+   text-align: center;
+   font-size: 42px;
+   margin-top: 10px;
+   margin-bottom: 0;
+}
+div.cover p{
+    color: lightgray;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+}
+div.cover-contact{
+    top: 20px;
+    left: 10px;
+    position: absolute;
+    border-left: 4px solid var(--color1);
+    padding-left: 8px;
+}
+div.cover-contact p{
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+div.cover-contact p:first-child{
+    margin-bottom: 14px;
+}
+div.cover-contact *{
+    color: white;
+    font-size: 14px;
+}
+a.button{
+    border: 3px solid var(--color1) ;
+   width: 200px;
+    padding: 8px 20px;
+    background-color:#00000040;
+    color: var(--color1);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    
+ 
+}
+a.button:hover{
+    border: 3px solid white ;
+   width: 200px;
+    padding: 8px 20px;
+    background-color:#00000040;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    
+}
+.section-grise2{
+    background: url(triangle1white.svg) no-repeat top center/100% ;
+    background-color: var(--color2);
+  
+    padding-top: 100px;
+    padding-bottom: 30px;
+
+}
+.section-grise1{
+    background: url(triangle2white.svg) no-repeat bottom center/100% ;
+    background-color: var(--color2);
+    height: 200px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    font-size: 22px;
+    text-align: center;
+    color: #656565;
+}
+.section-grise1 p{
+    max-width: 415px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.portfolio-header .text-avec-ligne-vertical{
+    margin-left: 16px; margin-top: 22px; height:40px;
+}
+.section{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: auto;
+}
+h2{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 0px;
+}
+.separateur{
+    height: 1px;
+    width: 150px;
+    background-color: #979797;
+  margin-left: auto;
+  margin-right: auto;
+}
+div a.button{
+     margin-right: 20px; margin-top:10px;
+}
+.col40{
+    width: 40%;
+}
+.col60{
+    width: 60%;
+}
+.float-right{
+    float: right;
+    padding-left: 16px;
+    
+}
+div.text-avec-ligne-vertical{
+    border-left: 4px solid var(--color1);
+    display: inline-block;
+    padding-left: 8px;
+    padding-top: 0;
+    height: 50px;
+
+}
+.text-avec-ligne-vertical p{
+    margin-top: 0;
+    padding-top: 0;
+}
+.barre-vertical{
+    height: 50px;
+    width: 4px;
+    background-color: var(--color1);
+    margin-right: 8px;
+}
+.col-portfolio{
+    width: 47%;
+}
+.frame{
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1) ;
+    margin: 30px 50px;
+    padding: 20px 30px;
+    background-color: white;
+}
+.frame table tr td img{
+    width: 100px;
+}
+/*PORTFOLIO*/
+.portfolio-header{
+    
+    background: url(header.jpg) no-repeat center / cover;
+    height: 90px;
+   
+}
+.portfolio-header-title{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+  
+    padding-top: 4px;
+    padding-left: 8px;
+}
+.section .text-avec-ligne-vertical div a img{
+    width: 70%; 
+    max-width:475px;
+}
+h1.portfolio{
+    font-size: 46px;
+    font-weight: bold;
+    color: black;
+    line-height: 1;
+    padding-top: 10px;
+}
+h2.portfolio{
+    font-size: 26px;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 0;
+
+}
+a.portfolio-back{
+    color: var(--color1);
+    float: left;
+    font-size: 15px;
+    margin-left: -20px;
+}
+.display-mobile{
+    display: none;
+}
+/*responsive design*/
+@media  only screen and (max-width: 767px) {
+
+    img.cover-profile{
+        height: 90px;
+       margin-top: 75px;
+    }
+    h1{
+       font-size: 38px;
+       margin-top: 6px;
+    
+    }
+    div.cover p{
+        margin-top: 2px;
+        font-size: 13px;
+    }
+
+
+    
+.section-grise1{
+  
+    padding-bottom: 20px;
+}
+  
+.section{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h2{
+ 
+    font-size: 30px;
+
+}
+.col40{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.col60{
+    width: 100%;
+}
+.float-right{
+    padding-left: 0;
+    
+}
+.section-grise2{
+  
+  
+    padding-top: 90px;
+    padding-bottom: 30px;
+    
+
+}
+.section-grise2 table{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.frame{
+ margin: 0;
+    padding: 0;
+    box-shadow: none;
+
+}
+.frame table tr td img{
+    width: 70px;
+}
+
+.portfolio-header{
+    
+    background: url(header.jpg) no-repeat center / cover;
+    height: 90px;
+   
+}
+.portfolio-header-title{
+    font-size: 17px;
+  
+    padding-top: 10px;
+    padding-left: 1px;
+    margin-left: 0px;
+}
+a.button{
+    
+  
+    padding: 7px 12px;
+    margin-top: 22px;
+    font-size: 12px;
+   
+    
+ 
+}
+
+div a.button{
+    margin-right: 4px; margin-top:15px;
+    width: 140px;
+}
+a.button:hover{
+   
+   width: 150px;
+    padding: 7px 15px;
+
+  
+  
+    margin-top: 15px;
+    font-size: 12px;
+    
+}
+.portfolio-header .text-avec-ligne-vertical{
+    margin-left: 5px; margin-top: 18px; height: 30px;
+}
+a.portfolio-back{
+    font-size: 12px;
+    margin-left: -10px;
+}
+
+
+h1.portfolio{
+    font-size: 40px;
+}
+h2.portfolio{
+    font-size: 22px;
+
+}
+.section .text-avec-ligne-vertical div a img{
+    width: 100%; 
+    
+}
+.display-mobile{
+    display: block;
+}
+
+img.cover-profile1{
+   /* height: 100px;9*/
+    width: 100%;
+   position: relative;
+
+   margin-top: 33px;
+
+}
+}
